@@ -41,7 +41,7 @@ target: heroRef, offset: ['start end' , 'end start'],
       <div className='mt-20 md:mt-0 md:h-[648px] md:flex-1 relative'>
         <motion.img src={cogImage.src} alt="Cog Image" className='md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0' animate={{
           translateY: [-30, 30], 
-        }} transition={{ repeat: Infinity, repeatType: 'mirror', duration: 3, ease: 'easeInOut',}} />
+        }} transition={{ repeat: Infinity, repeatType: 'mirror', duration: 1, ease: 'easeInOut',}} />
       <motion.img 
       src= {cylinderImage.src} 
       width={220} 
