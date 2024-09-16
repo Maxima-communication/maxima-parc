@@ -38,7 +38,7 @@ export const Features = () => {
             Profitez d&apos;une gestion de flotte personnalisable, d&apos;outils de coordination d&apos;équipe et d&apos;un suivi intelligent des réservations, le tout en un seul endroit. Programmez vos réservations, recevez des rappels de maintenance et suivez la progression de votre entreprise simplement et rapidement.
           </p>
         </div>
-        <div className="mt-16 flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
           {features.map(({ title, description, Icon }) => (
             <Feature title={title} description={description} Icon={Icon} key={title} />
           ))}
