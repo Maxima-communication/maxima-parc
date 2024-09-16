@@ -93,8 +93,8 @@ Profitez des meilleurs tarifs du marché pour une valeur exceptionnelle.
   
   </div>
   <div className='flex items-baseline gap-1 mt-[30px]'>
-    <span className='text-4xl font-bold tracking-tighter leading-none'>{monthlyPrice} DHS</span>
-    <span className='tracking-tight font-bold text-black/50'>/month</span>
+    <span className='text-4xl font-bold tracking-tighter leading-none'>{monthlyPrice} DHs</span>
+    <span className='tracking-tight font-bold text-black/50'>/ Année</span>
   </div>
   <button className={twMerge('btn btn-primary w-full mt-[30px]', inverse === true && 'bg-white text-black')}>{buttonText}</button>
   <ul className='flex flex-col gap-5 mt-8'>
