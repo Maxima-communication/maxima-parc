@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { twMerge} from "tailwind-merge";
 import { siteConfig } from "@/configs/site";
+import { Analytics } from "@vercel/analytics/react"
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -51,6 +52,7 @@ export default function RootLayout({
     <html lang="en" className="relative">
       <body className={twMerge(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
+        <Analytics/>
       </body>
     </html>
   );
