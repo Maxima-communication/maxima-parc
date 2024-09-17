@@ -130,6 +130,7 @@ export const Header = () => {
                   to='calltoaction'
                   smooth={true}
                   duration={700}
+                  onClick={() => setIsMenuOpen(false)}
                   className="btn btn-text gap-1 cursor-pointer"
                 >
                   <span>Profitez maintenant</span>
