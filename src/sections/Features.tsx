@@ -9,7 +9,7 @@ const features = [
   {
     title: "Gestion des clients",
     description:
-      "Numérisation automatique des documents(CIN, Permis), base de données sécurisée, et suivi personnalisé pour un service optimal.",
+      "Numérisation automatique des documents (CIN, Permis), base de données sécurisée, et suivi personnalisé pour un service optimal.",
     Icon: ClientIcon,
   },
   {
@@ -28,7 +28,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip">
+    <div id="features" className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip">
       <div className="container">
         <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-5">
           Tout ce dont vous avez besoin !

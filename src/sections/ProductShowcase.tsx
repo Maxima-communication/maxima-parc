@@ -2,8 +2,8 @@
 
 import productImage from '@/assets/product-image.png';
 import Image from 'next/image';
-import pyramidImage from '@/assets/pyramid.png';
-import tubeImage from "@/assets/tube.png";
+import pyramidImage from '@/assets/pyramid 1.png';
+import tubeImage from "@/assets/torus 1.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 

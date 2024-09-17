@@ -4,6 +4,7 @@
 import CheckIcon from '@/assets/check.svg';
 import { twMerge } from 'tailwind-merge';
 import { motion } from 'framer-motion';
+import { Link as ScrollLink } from 'react-scroll';
 
 
 
@@ -59,7 +60,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-  <section className="py-24 bg-white">
+  <section id='pricing' className="py-24 bg-white">
 <div className="container">
   <div className='section-heading'>
 <h2 className="section-title">
@@ -69,10 +70,10 @@ Tarifs
 Profitez des meilleurs tarifs du marché pour une valeur exceptionnelle.
 </p>
 </div>
-<div className='flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center'>
+<div className='flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-start lg:justify-center'>
   {pricingTiers.map(({ title, monthlyPrice, buttonText, popular, inverse, features }) => ( 
     <div className={twMerge('card', inverse === true && "border-black bg-black text-white")}>
-  <div className='flex justify-between '>
+  <div className='flex justify-between'>
 
   <h3 className={twMerge('text-lg font-bold text-black/50', inverse === true && 'text-white/60')}>{title}</h3>
   {popular === true && (
@@ -96,7 +97,9 @@ Profitez des meilleurs tarifs du marché pour une valeur exceptionnelle.
     <span className='text-4xl font-bold tracking-tighter leading-none'>{monthlyPrice} DHs</span>
     <span className='tracking-tight font-bold text-black/50'>/ Année</span>
   </div>
+  <ScrollLink to="calltoaction" smooth={true} duration={700}>
   <button className={twMerge('btn btn-primary w-full mt-[30px]', inverse === true && 'bg-white text-black')}>{buttonText}</button>
+  </ScrollLink>
   <ul className='flex flex-col gap-5 mt-8'>
     {features.map((feature) => (
       <li className='text-sm flex items-center gap-4'>

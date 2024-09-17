@@ -2,8 +2,8 @@
 
 import React, { useRef, useState } from 'react';
 import ArrowRight from '@/assets/arrow-right.svg';
-import starImage from '@/assets/star.png';
-import springImage from '@/assets/spring.png';
+import starImage from '@/assets/emojistar 1.png';
+import springImage from '@/assets/helix2 1.png';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import emailjs from "@emailjs/browser";
@@ -52,7 +52,7 @@ export const CallToAction = () => {
   };
 
   return (
-    <section ref={sectionRef} className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip">
+    <section id='calltoaction' ref={sectionRef} className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip">
       <div className="container mx-auto px-4">
         <div className='section-heading relative'>
           <h2 className="section-title text-4xl font-bold text-center mb-5">100% satisfait ou remboursé, garanti !</h2>
@@ -63,7 +63,7 @@ export const CallToAction = () => {
           <motion.img src={springImage.src} alt="Spring Image" width={360} className='absolute -right-[331px] -top-[19px]' style={{ translateY }} />
         </div>
         <div className="flex gap-2 mt-10 justify-center">
-          <button className="btn btn-primary">2 mois gratuit</button>
+          <div className="btn btn-primary">2 mois gratuit 🎉</div>
           {/* <button className="btn btn-text gap-1">
             <span>Profitez maintenant!</span>
             <ArrowRight className="h-5 w-5" />
