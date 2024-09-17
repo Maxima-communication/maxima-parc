@@ -29,8 +29,8 @@ target: heroRef, offset: ['start end' , 'end start'],
         <p className="text-xl text-[#010D3E] tracking-tight mt-6">
         Gérez efficacement votre agence de location de voitures avec Maxima Parc. Simplifiez vos réservations, la gestion de votre flotte et vos clients en quelques clics. Optimisez vos opérations et concentrez-vous sur l&apos;essentiel.        </p>
         <div className="flex gap-1 items-center mt-[30px]">
-          <div className="btn btn-primary">
-          2 mois gratuit 🎉
+          <div className="btn btn-primary ">
+          2 mois gratuit
           </div> 
           <ScrollLink 
                   to='calltoaction'
