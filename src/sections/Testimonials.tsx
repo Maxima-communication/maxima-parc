@@ -20,13 +20,13 @@ const testimonials = [
   {
     text: "Le système a révolutionné notre manière de travailler. Nous avons gagné en productivité et nos clients apprécient la rapidité des processus.",
     imageSrc: avatar1.src,
-    name: "Deep Sud cars",
+    name: "BABA CARS",
     
   },
   {
     text: "Un outil indispensable pour la gestion quotidienne de notre flotte. Très intuitif et efficace. ",
     imageSrc: avatar2.src,
-    name: "EL Hamdaoui cars",
+    name: "DAROUICH CARS",
     
   },
   {
