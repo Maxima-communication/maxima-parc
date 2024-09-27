@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useRef, useState } from 'react';
 import ArrowRight from '@/assets/arrow-right.svg';
@@ -17,9 +17,12 @@ export const CallToAction = () => {
 
   const form = useRef<any>(null);
 
+  // State for success message
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
   const sendEmail = (e: any) => {
     e.preventDefault();
-  
+
     emailjs
       .sendForm("maxima_parc_form", "maxima_parc_template", form.current, {
         publicKey: "_GLhqqR6yqsi51G6z",
@@ -27,28 +30,37 @@ export const CallToAction = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-  
-          // Reset the form data state to clear the input fields
+
+          // Show success message
+          setShowSuccessMessage(true);
+
+          // Reset form data
           setFormData({
             name: '',
             email: '',
+            phone: '',
             message: '',
           });
-  
-          // Reset the form visually
+
           form.current.reset();
+
+          // Hide the message after 3 seconds
+          setTimeout(() => {
+            setShowSuccessMessage(false);
+          }, 3000);
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
-  };  
+  };
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: '',
   });
 
@@ -73,10 +85,6 @@ export const CallToAction = () => {
         </div>
         <div className="flex gap-2 mt-10 justify-center">
           <div className="btn btn-primary">Un mois gratuit 🎉</div>
-          {/* <button className="btn btn-text gap-1">
-            <span>Profitez maintenant!</span>
-            <ArrowRight className="h-5 w-5" />
-          </button> */}
         </div>
 
         <motion.div
@@ -122,6 +130,27 @@ export const CallToAction = () => {
                 className="w-full px-4 py-3 bg-white bg-opacity-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300 text-lg"
               />
             </motion.div>
+
+            {/* New phone number field */}
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.4 }}
+            >
+              <label htmlFor="phone" className="section-contact block text-lg text-gray-700 mb-2">
+                Numéro de téléphone
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 bg-white bg-opacity-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300 text-lg"
+              />
+            </motion.div>
+
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -150,6 +179,18 @@ export const CallToAction = () => {
               <ArrowRight className="h-5 w-5" />
             </motion.button>
           </form>
+
+          {/* Success message */}
+          {showSuccessMessage && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="mt-4 text-center text-green-600 text-lg font-semibold "
+            >
+              Votre email a été envoyé avec succès ! 🎉
+            </motion.div>
+          )}
         </motion.div>
       </div>
     </section>
