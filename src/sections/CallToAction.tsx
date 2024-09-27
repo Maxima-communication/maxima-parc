@@ -19,21 +19,30 @@ export const CallToAction = () => {
 
   const sendEmail = (e: any) => {
     e.preventDefault();
-
+  
     emailjs
-      .sendForm("service_67y2qdr", "template_3tw03b2", form.current, {
-        publicKey: "INzBYV3etTXU2zl20",
+      .sendForm("maxima_parc_form", "maxima_parc_template", form.current, {
+        publicKey: "_GLhqqR6yqsi51G6z",
       })
       .then(
         () => {
           console.log("SUCCESS!");
+  
+          // Reset the form data state to clear the input fields
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+          });
+  
+          // Reset the form visually
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
-    form.current.reset();
-  };
+  };  
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
@@ -63,7 +72,7 @@ export const CallToAction = () => {
           <motion.img src={springImage.src} alt="Spring Image" width={360} className='absolute -right-[331px] -top-[19px]' style={{ translateY }} />
         </div>
         <div className="flex gap-2 mt-10 justify-center">
-          <div className="btn btn-primary">2 mois gratuit 🎉</div>
+          <div className="btn btn-primary">Un mois gratuit 🎉</div>
           {/* <button className="btn btn-text gap-1">
             <span>Profitez maintenant!</span>
             <ArrowRight className="h-5 w-5" />

@@ -31,7 +31,7 @@ export const Header = () => {
         <p className='text-white/60 hidden md:block'>Satisfait ou Remboursé !</p>
         <div className='inline-flex gap-1 items-center'>
           <p>
-            2 mois gratuit 🎉
+            Un mois gratuit 🎉
           </p>
         </div>
       </div>
@@ -124,7 +124,7 @@ export const Header = () => {
               </ScrollLink>
               <div className="flex justify-between items-center">
                 <div className="btn btn-primary">
-                  2 mois gratuit
+                  Un mois gratuit
                 </div>
                 <ScrollLink 
                   to='calltoaction'

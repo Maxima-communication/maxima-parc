@@ -19,23 +19,32 @@ export const LogoTicker = () => {
         translateX: "-50%",
       }}
       transition={{
-        duration: 5,
+        duration: 10,
         repeat: Infinity,
         ease: "linear",
         repeatType: "loop",
 
       }}
       >
-        <Image src={acmeLogo} alt='Acme Logo' className='logo-ticker-image' />
-        <Image src={quantumLogo} alt='Quantum Logo' className='logo-ticker-image' />
-        <Image src={echoLogo} alt='Echo Logo' className='logo-ticker-image' />
-        <Image src={pulseLogo} alt='Pulse Logo' className='logo-ticker-image' />
-        <Image src={apexLogo} alt='Apex Logo' className='logo-ticker-image' />
-        <Image src={acmeLogo} alt='Acme Logo' className='logo-ticker-image' />
-        <Image src={quantumLogo} alt='Quantum Logo' className='logo-ticker-image' />
-        <Image src={echoLogo} alt='Echo Logo' className='logo-ticker-image' />
-        <Image src={pulseLogo} alt='Pulse Logo' className='logo-ticker-image' />
-        <Image src={apexLogo} alt='Apex Logo' className='logo-ticker-image' />
+        <Image src={acmeLogo} alt='Acme Logo' className='logo-ticker-image grayscale' />
+        <Image src={quantumLogo} alt='Quantum Logo' className='logo-ticker-image grayscale' />
+        <Image src={echoLogo} alt='Echo Logo' className='logo-ticker-image grayscale' />
+        <Image src={pulseLogo} alt='Pulse Logo' className='logo-ticker-image grayscale' />
+        <Image src={apexLogo} alt='Apex Logo' className='logo-ticker-image grayscale' />
+        <Image src={acmeLogo} alt='Acme Logo' className='logo-ticker-image grayscale' />
+        <Image src={quantumLogo} alt='Quantum Logo' className='logo-ticker-image grayscale' />
+        <Image src={echoLogo} alt='Echo Logo' className='logo-ticker-image grayscale' />
+        <Image src={pulseLogo} alt='Pulse Logo' className='logo-ticker-image grayscale' />
+        <Image src={apexLogo} alt='Apex Logo' className='logo-ticker-image grayscale' />
+        <Image src={acmeLogo} alt='Acme Logo' className='logo-ticker-image grayscale' />
+        <Image src={quantumLogo} alt='Quantum Logo' className='logo-ticker-image grayscale' />
+        <Image src={echoLogo} alt='Echo Logo' className='logo-ticker-image grayscale' />
+        <Image src={pulseLogo} alt='Pulse Logo' className='logo-ticker-image grayscale' />
+        <Image src={apexLogo} alt='Apex Logo' className='logo-ticker-image grayscale' />
+        <Image src={acmeLogo} alt='Acme Logo' className='logo-ticker-image grayscale' />
+        <Image src={quantumLogo} alt='Quantum Logo' className='logo-ticker-image grayscale' />
+        <Image src={echoLogo} alt='Echo Logo' className='logo-ticker-image grayscale' />
+        <Image src={pulseLogo} alt='Pulse Logo' className='logo-ticker-image grayscale' />
         </motion.div>
       </div>
     </div>

@@ -35,18 +35,18 @@ export const Footer = () => {
         </nav>
 
         <div className='flex justify-center gap-6 mt-6'>
-          <Link href="https://www.instagram.com/maximaparc/">
+          <Link href="https://www.instagram.com/maxima.parc/">
           <SocialInsta />
           </Link>
-          <Link href="https://www.facebook.com/maximaparc/">
+          <Link href="https://www.facebook.com/profile.php?id=61565955123499&mibextid=LQQJ4d">
           <SocialFacebook />
           </Link>
           <Link href="https://www.tiktok.com/@maximaparc">
           <SocialTiktok />
           </Link>
-          <Link href="https://www.youtube.com/@maximaparc">
+          {/* <Link href="https://www.youtube.com/@maximaparc">
           <SocialYoutube />
-          </Link>
+          </Link> */}
         </div>
         <p className='mt-6'>&copy; 2024 Maxima Parc. All rights reserved.</p>
       </div>
