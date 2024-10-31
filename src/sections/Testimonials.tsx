@@ -2,7 +2,7 @@
 "use client";
 
 import avatar1 from "@/assets/avatar-1.png";
-import avatar2 from "@/assets/avatar-2.png";
+// import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
 import avatar4 from "@/assets/avatar-4.png";
 import avatar5 from "@/assets/avatar-5.png";
@@ -23,12 +23,12 @@ const testimonials = [
     name: "BABA CARS",
     
   },
-  {
-    text: "Un outil indispensable pour la gestion quotidienne de notre flotte. Très intuitif et efficace. ",
-    imageSrc: avatar2.src,
-    name: "DAROUICH CARS",
+  // {
+  //   text: "Un outil indispensable pour la gestion quotidienne de notre flotte. Très intuitif et efficace. ",
+  //   imageSrc: avatar2.src,
+  //   name: "DAROUICH CARS",
     
-  },
+  // },
   {
     text: "Ce système a transformé la gestion de notre agence. Facile à utiliser et très complet, il nous aide à suivre toutes nos réservations et paiements en un seul endroit",
     imageSrc: avatar3.src,
